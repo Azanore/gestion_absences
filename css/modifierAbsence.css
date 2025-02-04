@@ -1,0 +1,82 @@
+ li:nth-child(3) {
+     background-color: #009879;
+ }
+
+ #filterall {
+     width: 80%;
+     margin: auto;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     padding: 10px 20px;
+     background-color: white;
+     border-radius: 10px;
+ }
+
+ #filterall h2 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ #filters {
+     padding: 10px 20px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 20px;
+ }
+
+ #filters input,
+ #filters select {
+     height: 35px;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+     border-Radius: 5px;
+     border: none;
+     padding: 0 10px;
+     outline: none;
+     border-Bottom: 2px solid #007A63;
+ }
+
+ #filters input:hover,
+ #filters select:hover {
+     box-Shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+     transform: scale(1.05);
+ }
+
+ #modifier {
+     height: 35px;
+     padding: 0 10px;
+     border: 1px solid gray;
+     border-radius: 5px 5px 30px 30px;
+     font-size: 16px;
+     background-color: #009879;
+     color: white;
+     cursor: pointer;
+     border: none;
+     width: 98%;
+     margin: 0 auto 20px;
+     display: block;
+ }
+
+ #modifier:hover {
+     background-color: #007a63;
+     box-shadow: 0 0 3px 0px #009879;
+     outline: 1px solid #bbfff1;
+ }
+
+ @media screen and (max-width:680px) {
+
+     #filters input,
+     #filters select {
+         flex: 1 1 100px;
+     }
+
+     #filters input:hover,
+     #filters select:hover {
+         transform: none;
+     }
+
+     li:nth-child(3) {
+         background: none !important;
+         border-bottom: 5px solid #009879 !important;
+     }
+ }

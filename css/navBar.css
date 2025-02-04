@@ -1,0 +1,172 @@
+ * {
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     margin: 0;
+     min-height: 102vh;
+     margin: 0;
+     background-color: #f0f0f0;
+ }
+
+ .navbar {
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.85);
+     overflow: hidden;
+     margin-bottom: 60px;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+ }
+
+ .navbar ul {
+     list-style-type: none;
+     margin: 0 auto;
+     padding: 7px 5px;
+     display: flex;
+     justify-content: flex-start;
+     width: 94%;
+     gap: 0 20px;
+     align-items: center;
+ }
+
+ .navbar ul li {
+     display: inline;
+     border-radius: 5px;
+ }
+
+ .navbar ul li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 10px;
+     text-decoration: none;
+     border-radius: 5px;
+     border: none;
+ }
+
+ .navbar ul li a:hover,
+ .navbar ul li:hover {
+     background-color: #007a63;
+     color: #fff;
+     animation-name: allo;
+     animation-duration: 400ms;
+     animation-fill-mode: forwards;
+ }
+
+ @keyframes allo {
+     60% {
+         transform: scale(1.05);
+     }
+
+     100% {
+         transform: scale(1.03);
+     }
+ }
+
+ #droit {
+     margin-left: auto;
+ }
+
+ #gauche {
+     margin-right: auto;
+ }
+
+ #droit>a,
+ #gauche>a {
+     padding: 0px;
+     margin: 0;
+ }
+
+ #droit img,
+ #gauche img {
+     width: 30px;
+     background-color: #f0f0f0;
+     border-radius: 5px;
+     padding: 5px 15px;
+     display: block;
+     margin: auto;
+ }
+
+ .navbar input[type='checkbox'] {
+     display: none;
+ }
+
+ .navbar label {
+     display: none;
+ }
+
+ @media screen and (min-width:681px) and (max-width:900px) {
+     .navbar ul li a {
+         font-size: 80%;
+     }
+
+     .navbar ul {
+         gap: 0 5px;
+     }
+ }
+
+ @media screen and (max-width:680px) {
+
+
+
+     .navbar input[type='checkbox']:checked~ul {
+         display: block
+     }
+
+     .navbar span {
+         color: white;
+         font-weight: bold;
+         font-size: 150%;
+     }
+
+     .navbar label {
+         display: inline-flex;
+         height: 40px;
+         padding: 0 10px;
+         transform: rotate(90deg);
+         cursor: pointer;
+     }
+
+     .navbar label:hover {
+         scale: 0.9;
+     }
+
+
+     .navbar ul {
+         display: none;
+         flex-direction: column;
+         width: 100%;
+         position: absolute;
+         margin: 0;
+         padding: 0;
+         background-color: rgba(0, 0, 0, 0.9);
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+         border-bottom-right-radius: 10px;
+         border-bottom-left-radius: 10px;
+         padding: 15px 0 0;
+
+     }
+
+     .navbar ul li {
+         width: fit-content;
+         background-color: none;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto 10px;
+         text-shadow: 1px 1px black;
+     }
+
+     .navbar ul li a {
+         background-color: none;
+         padding: 10px 0;
+         color: rgba(255, 255, 255, 0.85);
+     }
+
+     .navbar ul li a:hover,
+     .navbar ul li:hover {
+         animation-name: none;
+         background: none;
+         transform: scale(0.97);
+         color: white;
+     }
+ }

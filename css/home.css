@@ -1,0 +1,150 @@
+#gauche {
+    background: #009879 !important;
+    padding: 0 0 5px 0 !important;
+}
+
+#gauche:hover {
+    background-color: #007a63 !important;
+}
+
+
+main {
+    background: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.cont2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cont>article {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+
+main article {
+    background-color: #303030;
+    padding: 10px 20px 0;
+    border-radius: 10px;
+    color: #ddd;
+    height: fit-content;
+}
+
+body main section:nth-child(2) fieldset {
+    width: 100%;
+}
+
+fieldset {
+    border-radius: 5px;
+    border-style: none;
+    padding: 0;
+}
+
+fieldset ul {
+    padding: 0 10px;
+}
+
+h1 {
+    margin-bottom: 80px;
+    padding: 0 20px;
+}
+
+main article li {
+    text-align: start;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+main article li::marker {
+    color: #00997A
+}
+
+section {
+    padding: 0 20px 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-bottom: none;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+section:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+main a {
+    text-decoration: underline;
+    color: #00997A;
+    font-weight: bold;
+    cursor: alias;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px dashed white;
+}
+
+main li {
+    margin-bottom: 10px;
+    list-style-type: "► ";
+}
+
+legend {
+    background-color: #007A63;
+    padding: 5px 10px;
+}
+
+@media screen and (min-width:681px) and (max-width:900px) {
+    .cont {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    main section .cont {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    main {
+        width: 95%;
+        padding: 10px 0;
+        margin: auto;
+    }
+
+    section {
+        padding: 0;
+        width: 95%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .cont,
+    .cont2 {
+        gap: 30px;
+    }
+}
